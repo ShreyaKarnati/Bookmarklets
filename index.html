@@ -6,7 +6,7 @@
     <body>
         <h1>Bookmarklet</h1>
         <p>
-        This is <a href="javascript:(function() {let script = document.createElement('script');script.src = 'https://shreyakarnati.github.io/Bookmarklets/bookmarklet.js';document.body.appendChild(script);})();">Bookmarklet</a>
+        This is <a href="javascript:(function() {let script = document.createElement('script');var url = 'https://shreyakarnati.github.io/Bookmarklets/bookmarklet.js';script.src = url + "?" + new Date().getTime();document.body.appendChild(script);})();">Bookmarklet</a>
         <br/>
         <br/>
         Press Shift+Command+B(mac) or Shift+Ctrl+B to show bookmark bar is not visible.
